@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Student Registration Form</title>
+</head>
+<body>
+<center>
+<h2> Student Registration</h2>
+<form action="backend.php" method="POST">
+<label for="uname">Username:</label><br>
+<input type="text" name="uname" placeholder="Username" required><br>
+
+<label for="email">Email:</label><br>
+<input type="email" name="email" placeholder="Email" required<br><br>
+<label for="password">Password:</label><br>
+<input type="password" name="password" placeholder="password" required><br>
+
+<label for="mobile">Mobile Number:</label><br>
+<input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="Male" required>
+<label for="male">Male</label>
+<input type="radio" name="gender" value="Female">
+<label for="female">Female</label><br><br>
+
+<label for="dob"> Date of Birth:</label><br>
+<input type="date" name="dob" required><br><br>
+
+<label for="student_id">Student ID:</label><br>
+<input type="text" name="student_id" placeholder="Student ID" required><br>
+
+<label for ="year">Select College</label><br>
+<select name="year" required>
+ <option value="" disabled selected>_________ Select College__________</option>
+<option value="1">ADITYA DEGREE COLLEGE</option>
+<option value="2">ADITYA DEGREE COLLEGE FOR WOMEN</option>
+<option value="3">SRI ADITYA DEGREE COLLEGE</option>
+<option value="4">ADITYA BUSINESS SCHOOLS/COLLEGES</option>
+</select><br><br>
+
+<label for="course">Interested Courses:</label><br><p>which you are interested to join</p>
+<input type ="checkbox" name="course[]" value="Advanced Excel">Advanced Excel<br>
+<input type ="checkbox" name="course[]" value="Python Fullstack">Python Fullstack<br>
+<input type ="checkbox" name="course[]" value="Java Fullstack">Java Fullstack<br>
+<input type ="checkbox" name="course[]" value="MERN Stack">MERN Stack<br>
+<input type ="checkbox" name="course[]" value="AWS">AWS<br>
+<input type ="checkbox" name="course[]" value="power BI">POWERBI<br><br>
+
+<input type="submit" value="Register">
+</form>
+</center>
+</body>
+</html>
